@@ -20,28 +20,24 @@ body{
 /*Text*/
 h1{
     margin: 0 0 1em 0;
-    font-size: 2.8em;
-    font-weight: 700;
+    font-size: 2.2em;
+    font-weight: 500;
 }
 
 h2{
     margin: 0 0 0.5em 0;
     font-size: 1.6em;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.1em;
 }
 
 h3{
-    margin: 0 0 0.5em 0;
-    font-size: 1.3em;
-    font-weight: 700;
+    margin: 0 0 1em 0;
+    font-size: 1.4em;
+    font-weight: 600;
 }
 
-h3{
-    margin: 0 0 1.5em 0;
-    font-size: 1em;
-    font-weight: 700;
-}
+
 
 p{
     margin: 0 0 1em 0;
@@ -156,10 +152,6 @@ header{
 }
 
 
-header a.logo span {
-    display: none;
-}
-
 header div.hero {
     position: absolute;
     width: 40%;
@@ -180,6 +172,7 @@ header div.hero p {
     margin: 0 0 30px 0;
     color: #fff;
     font-size: 1.3em;
+    line-height: 1.4em;
 }
 
 /* Section - All */
@@ -215,27 +208,40 @@ section.main .content{
 }
 
 section.main aside h3 a {
-    color: #000;
+    color: #555;
     text-decoration: none;
 }
 
 section.main aside h3 a:hover {
-    color: #000;
-    text-decoration: underline;
+    color: #555;
 }
 
-section.main aside .content.trending{
+section.main aside .content.produkte{
     background-image: url(../images/icon_star.svg);
-    border: 0px solid #000;
+    border: 0px solid #555;
 
 }
 
-section.main aside .content.find-it{
+section.main aside .content.remeda{
     background-image: url(../images/icon_marker.svg);
-    border: 0px solid #000;
+    border: 0px solid #555;
 }
 
 
+/* Produkte */
+section.produkte{
+    background-color: rgb(107,205,161);
+    padding: 100px 80px;
+}
+
+
+
+
+/* Kontakt */
+section.kontakt{
+    height: 700px;
+    padding: 100px 80px;
+}
 
 /* Footer */
 footer{
@@ -243,7 +249,7 @@ footer{
     padding: 30px;
     color: #999;
     background-color: rgb(107,205,161);
-    height: 100px;
+    height: 80px;
     position: absolute;
     width: 100%;
 }
