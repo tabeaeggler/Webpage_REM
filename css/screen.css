@@ -276,12 +276,6 @@ footer a:hover {
 
 
 
-
-
-
-
-
-
 *,
 *:before,
 *:after {
@@ -347,7 +341,7 @@ footer a:hover {
     width: 3rem;
     height: 3rem;
     border: 2px solid #fefefe;
-    border-radius: 3px;
+    border-radius: 0px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -359,7 +353,7 @@ footer a:hover {
     height: 0.25rem;
     background: #333333;
     position: absolute;
-    border-radius: 3px;
+    border-radius: 0px;
     left: 50%;
     top: 50%;
     transition: 0.3s ease-in-out;
