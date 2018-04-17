@@ -5,8 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Creating a Responsive Web Design</title>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
 
-	</head>
+    </head>
 	<body>
 
 		<div id="page">
@@ -133,10 +135,9 @@
 							</p>
 						</div>
 					</div>
+                    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+                    <script src="accordionFunction.js"></script>
 
-
-					<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-					<script src="accordionFunction.js"></script>
 			</section>
 
 
@@ -147,26 +148,67 @@
 
 
 		<section class="kontakt">
-				<div class="intro">
-					<h1>Kontakt</h1>
-					<p>Bestellen Sie unsere Untelagen oder vereinbaren sie einen Termin über das Kontaktformular.</p>
-					<form method="POST" action="https://formspree.io/tabea.eggler@hotmail.com">
-						<input type="email" name="email" placeholder="Your email">
-						<textarea name="message" placeholder="Your message"></textarea>
-						<button type="submit">Send</button>
+
+
+            <h1>Kontakt</h1>
+            <p>Bestellen Sie unsere Untelagen oder vereinbaren sie einen Termin über das Kontaktformular. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna. Ponumy eirmod tempor invidunt ut labore et dolore, nonumy eirmod tempor invidunt ut labore et dolore, nonumy eirmod tempor invidunt.</p>
+
+
+			<div class = "frame">
+				<div id = "button_open_envelope">
+					Kontaktformular
+				</div>
+				<div class = "message">
+                    <form method="POST" action="https://formspree.io/tabea.eggler@hotmail.com">
+						<input type="text" name="name" id="name" placeholder=" Name ">
+						<input type="email" name="email" id="email" placeholder=" E-Mail ">
+						<input type="text" name="phone" id="phone" placeholder=" Telefon ">
+						<textarea name="message" id="messarea" placeholder=" Nachricht "></textarea>
+                        <div class="submit">
+                            <input type="submit" value="SENDEN" id="button-send"/>
+
+                        </div>
 					</form>
 				</div>
+                <div class = "bottom"></div>
+                <div class = "left"></div>
+                <div class = "right"></div>
+                <div class = "top"></div>
+                <script src="contact.js"></script>
+			</div>
+
 
 			</section>
 
 			<footer>
-                &copy; Everday Things
-                <div class="content">
-                    <a title="Privacy Policy" href="#">Privacy Policy</a>
-                    <a title="Terms of Service" href="#">Terms of Service</a>
-                </div>
+                <table style="width:100%">
+                    <tr>
+                        <th>Adresse</th>
+                        <th>E-Mail</th>
+                        <th>Telefon</th>
+                    </tr>
+                    <tr>
+                        <td>Remeda Allemann + Partner GmbH</td>
+                        <td>info@remeda.ch</td>
+                        <td>044 491 30 27</td>
+                    </tr>
+                    <tr>
+                        <td>Brahmsstrasse 18</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8003 Zürich</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
             </footer>
 		</div>
+
+
+
 	</body>
 </html>
 
