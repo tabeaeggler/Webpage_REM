@@ -143,7 +143,6 @@ header div.hero p {
 
 /* Section - All */
 section{
-    padding: 0 70px;
 }
 
 section::after {
@@ -154,16 +153,11 @@ section::after {
 
 /* Section - Main */
 section.main{
-    margin-top: -10px;
-    margin-bottom: 25px;
-    padding: 0 px;
+    padding: 100px 140px;
 }
 
 section.main aside{
-
-    width: 50%;
     float: left;
-    text-align: center;
 }
 
 section.main aside p{
