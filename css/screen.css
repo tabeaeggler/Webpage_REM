@@ -4,12 +4,13 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 300;
     color: #333333;
     margin: 0;
     padding: 0;
     background-color: rgba(0,0,0,0.1);
+    overflow: auto;
 }
 
 #page{
@@ -20,9 +21,10 @@ body{
 /*Text*/
 h1{
     margin: 0 0 1em 0;
-    font-size: 2.2em;
+    font-size: 3em;
     font-weight: 500;
-    color: black;
+    color: #333333;
+    display: inline;
 }
 
 h2{
@@ -30,17 +32,15 @@ h2{
     font-size: 1.6em;
     font-weight: 500;
     line-height: 1.1em;
-    color: black;
+    color: #333333;
 }
 
 h3{
     margin: 0 0 1em 0;
     font-size: 1.4em;
     font-weight: 600;
-    color: black;
+    color: #333333;
 }
-
-
 
 p{
     margin: 0 0 1em 0;
@@ -57,9 +57,9 @@ a:visited{
 a.btn {
     font-size: 1.2em;
     text-decoration: none;
-    color: #000;
-    border: 1px solid #000;
-    padding: 4px 15px;
+    color: #333333;;
+    border: 1px solid #333333;
+    padding: 5px 15px;
     transition: background-color 0.5s;
 }
 
@@ -67,107 +67,70 @@ a.btn:hover{
     background-color: rgba(0,0,0,0.3);
 }
 
-/* Navigation */
-nav {
-    background-color: rgba(255,255,255,0.7);
-    position: relative;
-    padding: 0;
-    width: 100%;
-    height: 100px;
-    margin-top: 0px;
+a.btn_products {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #333333;
+    border: 1px solid #333333;
+    padding: 4px 15px;
+    transition: background-color 0.5s;
 }
 
-nav a.logo{
-    z-index: 1;
-    position: absolute;
+a.btn_products:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+a.logo{
+     z-index: 100;
+     position: absolute;
+     display: block;
+     width: 160px;
+     height: 66px;
+     background: url(../images/logo_remeda_white.png) no-repeat 0 0;
+     background-size: contain;
+     top: 30px;
+     left: 30px;
+ }
+
+a.logo_footer{
+    z-index: 100;
+    position: relative;
     display: block;
     width: 160px;
     height: 66px;
     background: url(../images/logo_remeda.png) no-repeat 0 0;
     background-size: contain;
-    top: 20px;
-    left: 20px;
+    float: right;
+    margin-top: -120px;
+    margin-right: 80px;
 }
 
-nav::after {
-    content:"";
-    display: block;
-    clear: both;
-}
-
-nav ul{
-    list-style-type: none;
-    margin: 15px;
-    padding: 30px;
-}
-
-nav ul li:hover{
-    background-color:rgba(0,0,0,0.1);
-}
-
-nav ul li:hover > ul{
-    display: block;
-}
-
-nav ul li a{
-    display: inline-block;
-    color: #000;
-    padding: 10px 20px;
-    text-decoration: none;
-    width: 125px;
-    position: relative;
-    font-size: 1.2em;
-}
-
-nav ul li a:visited{
-    color: #fff;
-}
-
-nav ul li a:hover{
-    background-color: rgba(107,205,161,0.8);
-    color: white;
-
-}
-
-/* top-level */
-nav > ul {
-    padding-left: 200px;
-}
-
-nav > ul > li {
-    float: left;
-}
-
-nav > ul > li > a {
-    width: auto;
-    padding: 10px 20px 15px 20px;
-}
 
 /*Header*/
 
 header{
     height: 500px;
     margin-top: 0px;
-    background-color: rgb(107,205,161);
     position: relative;
-    background: url(../images/31332416-a-picture-of-an-old-couple-strollingin-the-park2.jpg) no-repeat 0 0;
+    background-image: url(../images/remeda_header.jpg);
+    background-repeat: no-repeat;
     width: 100%;
+
 }
 
-
 header div.hero {
-    position: absolute;
+    margin-left: 60%;
+    padding-top: 140px;
     width: 40%;
     top: 100px;
-    left: 54%;
     color: white;
 }
 
-
 header div.hero h1 {
     line-height: 1em;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
     color: #fff;
+    font-size: 2.5em;
 }
 
 header div.hero p {
@@ -189,18 +152,22 @@ section::after {
     clear: both;
 }
 
-
 /* Section - Main */
 section.main{
-    margin-top: 0px;
-    margin-bottom: 50px;
-    padding: 0;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    padding: 0 px;
 }
 
 section.main aside{
+
     width: 50%;
     float: left;
     text-align: center;
+}
+
+section.main aside p{
+    padding-bottom: 20px;
 }
 
 section.main .content{
@@ -210,19 +177,18 @@ section.main .content{
     padding-top: 85px;
 }
 
-section.main aside h3 a {
+section.main aside .title{
     color: #333;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 1.7em;
 }
 
-section.main aside h3 a:hover {
-    color: #333;
-}
+
 
 section.main aside .content.produkte{
     background-image: url(../images/cube.svg);
     border: 0px solid #333;
-
 }
 
 section.main aside .content.remeda{
@@ -230,6 +196,14 @@ section.main aside .content.remeda{
     border: 0px solid #333;
 }
 
+section.main aside .content.remeda p{
+    padding-top: 10px;
+}
+
+section.main aside .content.produkte p{
+    padding-top: 10px;
+
+}
 
 /* Produkte */
 section.produkte{
@@ -237,42 +211,43 @@ section.produkte{
     padding: 100px 80px;
 }
 
+.intro{
+    padding-left: 4vw;
+    padding-bottom: 1vw;
+}
+
+
+
 
 /* Kontakt */
 section.kontakt{
     height: 920px;
-    padding: 100px 80px;
+    padding: 100px 140px;
 }
 
 /* Footer */
 footer{
-    font-size: 0.8em;
-    padding: 30px;
-    color: #999;
+    padding: 70px;
+    color: #333;
     background-color: rgb(107,205,161);
-    height: 150px;
-    position: absolute;
+    height: 230px;
     width: 100%;
+    text-align: left;
+}
+
+footer table{
+    position: center;
+    margin-left: 70px;
 }
 
 footer .content{
-    display: inline;
+
 }
 
-footer a {
-    margin-left: 30px;
-    color: #777;
+footer table td {
+    padding-right: 70px;
 }
 
-footer a:visited {
-    margin-left: 30px;
-    color: #777;
-}
-
-footer a:hover {
-    margin-left: 30px;
-    color: #000;
-}
 
 
 
@@ -288,20 +263,20 @@ footer a:hover {
     width: 100%;
     max-width: 75rem;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0;
 }
 
 .accordion-item {
     position: relative;
 }
 .accordion-item.active .heading {
-    color: #666666;
+    font-size: 1.2em;
 }
 .accordion-item.active .icon {
     background: #fefefe;
 }
 .accordion-item.active .icon:before {
-    background: #666666;
+
 }
 .accordion-item.active .icon:after {
     width: 0;
@@ -323,15 +298,25 @@ footer a:hover {
 }
 
 .accordion-item .title{
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 1.5em;
+
 }
+
+title2{
+    font-weight: 900;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+
 
 
 .accordion-item .heading:hover {
-    color: #666666;
+    font-size: 1.2em;
 }
 .accordion-item .heading:hover .icon:before, .accordion-item .heading:hover .icon:after {
-    background: #666666;
+
 }
 .accordion-item .icon {
     display: block;
