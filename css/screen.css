@@ -21,10 +21,35 @@ body{
 /*Text*/
 h1{
     margin: 0 0 1em 0;
-    font-size: 2.6em;
     font-weight: 500;
     color: #333333;
     display: inline;
+}
+/*
+  Laptops, Desktops
+*/
+@media (min-width: 1025px) {
+    h1{
+        font-size: 2.5em;
+    }
+}
+
+/*
+  Tablets, Ipads
+*/
+@media (min-width: 650px) and (max-width: 1024px) {
+    h1{
+        font-size: 1.9em;
+    }
+}
+
+/*
+  Mobile
+*/
+@media (max-width: 649px) {
+    h1{
+        font-size: 1.6em;
+    }
 }
 
 h2{
@@ -92,21 +117,26 @@ a.logo{
      left: 30px;
  }
 
-a.logo_footer{
-    z-index: 100;
-    position: relative;
-    display: block;
-    width: 160px;
-    height: 66px;
-    background: url(../images/logo_remeda.png) no-repeat 0 0;
-    background-size: contain;
-    float: right;
-    margin-top: -120px;
-    margin-right: 80px;
-}
 
 
 /*Header*/
+#header h1 {
+    color: #fff;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+#header p {
+    color: #fff;
+}
+
+#header {
+    margin-left: 60%;
+    padding-top: 140px;
+    width: 40%;
+    top: 100px;
+    color: white;
+}
 
 header{
     height: 500px;
@@ -115,30 +145,97 @@ header{
     background-image: url(../images/remeda_header.jpg);
     background-repeat: no-repeat;
     width: 100%;
+}
+/*
+  Laptops, Desktops
+*/
+@media (min-width: 1025px) {
+    #header h1 {
+        font-size: 2.5em;
+    }
 
+    #header p {
+        font-size: 1.3em;
+    }
+
+    #header {
+        margin-left: 60%;
+        padding-top: 140px;
+        width: 40%;
+        top: 100px;
+        color: white;
+    }
+
+    header{
+        height: 500px;
+        margin-top: 0px;
+        position: relative;
+        background-image: url(../images/remeda_header.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+    }
 }
 
-header div.hero {
-    margin-left: 60%;
-    padding-top: 140px;
-    width: 40%;
-    top: 100px;
-    color: white;
+/*
+  Tablets, Ipads
+*/
+@media (min-width: 650px) and (max-width: 1024px) {
+    #header h1 {
+        font-size: 2.3em;
+    }
+
+    #header p {
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    #header {
+        margin-left: 50%;
+        padding-top: 150px;
+        width: 45%;
+        top: 100px;
+        color: white;
+    }
+
+    header{
+        height: 500px;
+        margin-top: 0px;
+        position: relative;
+        background-image: url(../images/remeda_header-t.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+    }
 }
 
-header div.hero h1 {
-    line-height: 1em;
-    margin: 0 0 50px 0;
-    color: #fff;
-    font-size: 2.5em;
-}
+/*
+  Mobile
+*/
+@media (max-width: 649px) {
+    #header h1 {
+        font-size: 2.1em;
+    }
 
-header div.hero p {
-    line-height: 1em;
-    margin: 0 0 30px 0;
-    color: #fff;
-    font-size: 1.3em;
-    line-height: 1.4em;
+    #header p {
+        font-size: 1.1em;
+        line-height: 1.1em;
+    }
+
+    #header {
+        margin-left: 35%;
+        padding-top: 190px;
+        width: 60%;
+        top: 130px;
+        color: white;
+    }
+
+    header{
+        height: 500px;
+        margin-top: 0px;
+        position: relative;
+        background-image: url(../images/remeda_header-s.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+    }
 }
 
 /* Section - All */
@@ -152,112 +249,147 @@ section::after {
     clear: both;
 }
 
-/* Section - Main */
-section.main{
-    margin-top: -10px;
-    margin-bottom: 25px;
-}
+/* Section - General */
 
-section.main aside{
-
-    width: 50%;
-    float: left;
+.general div{
     text-align: center;
+    padding: 10px;
 }
 
-section.main aside p{
-    padding-bottom: 20px;
+.general-box{
+    flex: 1;
 }
 
-section.main .content{
-    margin: 10%;
-    background: no-repeat center top;
-    background-size: 75px 75px;
-    padding-top: 85px;
-    padding-bottom: 20px;
+/*
+  Laptops, Desktops
+*/
+@media (min-width: 1025px) {
+    .general{
+        display: flex;
+        padding: 3em 3em;
+    }
+
+    .title{
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+
+    #svg-produkte{
+        width: 4em;
+        fill: #333;
+        margin-bottom: 10px;
+    }
+
+    #svg-remeda{
+        fill: #333;
+        width: 4em;
+        margin-bottom: 10px;
+    }
 }
 
-section.main aside .title{
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.7em;
+/*
+  Tablets, Ipads
+*/
+@media (min-width: 650px) and (max-width: 1024px) {
+    .general{
+        display: flex;
+        padding: 1.5em 1.5em;
+    }
+
+    .title{
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+
+    #svg-produkte{
+        width: 3.8em;
+        fill: #333;
+        margin-bottom: 10px;
+    }
+
+    #svg-remeda{
+        fill: #333;
+        width: 4em;
+        margin-bottom: 10px;
+    }
 }
 
+/*
+  Mobile
+*/
+@media (max-width: 649px) {
+    .general{
+        padding: 1.5em 3em 0em 3em;
+    }
 
+    .general div{
+        margin-bottom: 35px;
+    }
 
-section.main aside .content.produkte{
-    background-image: url(../images/cube.svg);
-    border: 0px solid #333;
-}
+    .title{
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
 
-section.main aside .content.remeda{
-    background-image: url(../images/focus.svg);
-    border: 0px solid #333;
-}
+    #svg-produkte{
+        width: 3.6em;
+        fill: #333;
+        margin-bottom: 10px;
+    }
 
-section.main aside .content.remeda p{
-    padding-top: 10px;
-}
-
-section.main aside .content.produkte p{
-    padding-top: 10px;
-
+    #svg-remeda{
+        fill: #333;
+        width: 4em;
+        margin-bottom: 10px;
+    }
 }
 
 /* Produkte */
-section.produkte{
+#produkte{
     background-color: rgb(107,205,161);
-    padding: 100px 80px;
-}
-
-.intro{
-    padding-left: 4vw;
-    padding-bottom: 1vw;
 }
 
 
-
-
-/* Kontakt */
-section.kontakt{
-    height: 920px;
-    padding: 100px 140px;
+/*
+  Laptops, Desktops
+*/
+@media (min-width: 1025px) {
+    #produkte{
+        padding: 100px 80px;
+    }
 }
 
-/* Footer */
-footer{
-    padding: 70px;
-    color: #333;
-    background-color: rgb(107,205,161);
-    height: 230px;
-    width: 100%;
-    text-align: left;
+/*
+  Tablets, Ipads
+*/
+@media (min-width: 650px) and (max-width: 1024px) {
+    #produkte{
+        padding: 80px 50px;
+    }
 }
 
-footer table{
-    position: center;
-    margin-left: 70px;
-}
-
-footer .content{
-
-}
-
-footer table td {
-    padding-right: 70px;
+/*
+  Mobile
+*/
+@media (max-width: 649px) {
+    #produkte{
+        padding: 80px 30px;
+    }
 }
 
 
-
-
+/* Produkte - Accordion */
 *,
 *:before,
 *:after {
     box-sizing: border-box;
 }
-
-
 
 .accordion {
     width: 100%;
@@ -299,21 +431,37 @@ footer table td {
 
 .accordion-item .title{
     font-weight: 500;
-    font-size: 1.5em;
-
 }
 
-title2{
-    font-weight: 900;
-    font-size: 1.3em;
-    text-decoration: none;
+/*
+  Laptops, Desktops
+*/
+@media (min-width: 1025px) {
+    .accordion-item .title{
+        font-size: 1.2em;
+    }
 }
 
+/*
+  Tablets, Ipads
+*/
+@media (min-width: 650px) and (max-width: 1024px) {
+    .accordion-item .title{
+        font-size: 1.1em;
+    }
+}
 
-
+/*
+  Mobile
+*/
+@media (max-width: 649px) {
+    .accordion-item .title{
+        font-size: 1.0em;
+    }
+}
 
 .accordion-item .heading:hover {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .accordion-item .heading:hover .icon:before, .accordion-item .heading:hover .icon:after {
 
@@ -330,7 +478,6 @@ title2{
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
 
 .accordion-item .icon:before, .accordion-item .icon:after {
     content: '';
@@ -356,188 +503,473 @@ title2{
 .accordion-item .content p {
     margin-top: 0;
 }
-@media (min-width: 40rem) {
-    .accordion-item .content {
-        line-height: 1.75;
+
+
+/* Kontakt */
+section.kontakt{
+    height: 920px;
+}
+
+/*
+  Laptops, Desktops
+*/
+@media (min-width: 1025px) {
+    section.kontakt{
+        padding: 80px 80px;
     }
 }
 
-
-.frame{
-    width: 600px;
-    height: 350px;
-    margin: 210px auto 0;
-    position: relative;
-    background: whitesmoke;
-    border-radius:0 0 40px 40px;
-}
-#button_open_envelope{
-    width: 220px;
-    height: 50px;
-    position: absolute;
-    z-index: 311;
-    top: 260px;
-    left: 200px;
-    border-radius: 7px;
-    color: #fff;
-    font-size: 26px;
-    padding:5px 2px 0px 7px;
-    border: 2px solid #fff;
-    transition:.3s;
-}
-#button_open_envelope:hover{
-    background: #FFf;
-    color: rgb(107,205,161);
-    transform:scale(1.1);
-    transition:background .25s, transform .5s,ease-in;
-    cursor: pointer;
+/*
+  Tablets, Ipads
+*/
+@media (min-width: 650px) and (max-width: 1024px) {
+    section.kontakt{
+        padding: 80px 50px;
+    }
 }
 
-#button-send{
-    width: 570px;
-    height: 50px;
-    position: absolute;
-    z-index: 311;
-    top: 250px;
-    left: 0px;
-    border-radius: 0px 0px 10px 10px;
-    color: whitesmoke;
-    font-size: 26px;
-    padding:5px 2px 0px 7px;
-    border: none;
-    transition:.3s;
+/*
+  Tablets, Ipads, LapTops, Desktop
+*/
+@media (min-width: 650px) {
+    .frame{
+        width: 600px;
+        height: 350px;
+        margin: 210px auto 0;
+        position: relative;
+        background: whitesmoke;
+        border-radius:0 0 40px 40px;
+    }
+    #button_open_envelope{
+        width: 220px;
+        height: 50px;
+        position: absolute;
+        z-index: 311;
+        top: 260px;
+        left: 200px;
+        border-radius: 7px;
+        color: #fff;
+        font-size: 26px;
+        padding:5px 2px 0px 7px;
+        border: 2px solid #fff;
+        transition:.3s;
+    }
+    #button_open_envelope:hover{
+        background: #FFf;
+        color: rgb(107,205,161);
+        transform:scale(1.1);
+        transition:background .25s, transform .5s,ease-in;
+        cursor: pointer;
+    }
+
+    #button-send{
+        width: 570px;
+        height: 50px;
+        position: absolute;
+        z-index: 311;
+        top: 250px;
+        left: 0px;
+        border-radius: 0px 0px 10px 10px;
+        color: whitesmoke;
+        font-size: 26px;
+        padding:5px 2px 0px 7px;
+        border: none;
+        transition:.3s;
+        background-color: rgb(107,205,161);
+    }
+
+    #button-send:hover{
+        background: #a8a8a8;
+        color: whitesmoke;
+        cursor: pointer;
+        font-size: 25px;
+        transition: all .2s ease-in-out;
+    }
+    .message{
+        position: relative;
+        border-radius: 10px 10px 10px 10px;
+        width: 570px;
+        min-height:300px;
+        height: auto;
+        background: #fff;
+        margin: 20px auto;
+        top: 30px;
+        box-shadow: 0 0 5px 2px #a8a8a8;
+        transition:2s ease-in-out;
+        transition-delay:1.5s;
+        z-index: 300;
+    }
+    .left,.right,.top{width: 0;	height: 0;position:absolute;top:0;z-index: 310;}
+    .left{
+        border-left: 300px solid #d7d7d7;
+        border-top: 160px solid transparent;
+        border-bottom: 160px solid transparent;
+    }
+    .right{
+        border-right: 300px solid #d7d7d7;
+        border-top: 160px solid transparent;
+        border-bottom: 160px solid transparent;;
+        left:300px;
+    }
+    .top{
+        border-right: 300px solid transparent;
+        border-top: 200px solid #f1f1f1;
+        border-left: 300px solid transparent;
+        transition:transform 1s,border 1s, ease-in-out;
+        transform-origin:top;
+        transform:rotateX(0deg);
+        z-index: 500;
+    }
+    .bottom{
+        width: 600px;
+        height: 190px;
+        position: absolute;
+        background: #bdbdbd;
+        top: 160px;
+        border-radius:0 0 30px 30px;
+        z-index: 310;
+    }
+
+    .open{
+        transform-origin:top;
+        transform:rotateX(180deg);
+        transition:transform .7s,border .7s,z-index .7s ease-in-out;
+        border-top: 200px solid #a8a8a8;
+        z-index: 200;
+    }
+    .pull{
+        -webkit-animation:message_animation 2s 1 ease-in-out;
+        animation:message_animation 2s 1 ease-in-out;
+        -webkit-animation-delay:.9s;
+        animation-delay:.45s;
+        transition:1.5s;
+        transition-delay:1s;
+        z-index: 350;
+    }
+    #name,#email,#phone,#messarea,#send{
+        margin: 0;
+        padding: 0 0 0 8px;
+        width: 570px;
+        height:40px;
+        float: left;
+        display: block;
+        font-size: 16px;
+        color: rgb(107,205,161);
+        border:none;
+        border-bottom:1px solid #bdbdbd;
+        letter-spacing: normal;
+        font-family: "Open Sans";
+    }
+
+    #name {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #messarea{
+        height: 117px;
+        width: 560px;
+        overflow: auto;
+        border:none;
+        padding: 10px;
+    }
+    #send{
+        width:   580px;
+        padding: 0;
+        border:  none;
+        cursor:  pointer;
+        background: rgb(107,205,161);
+        color: #fff;
+        transition:.35s;
+        letter-spacing: 1px;
+    }
+
+    ::-moz-placeholder{color: rgb(107,205,161);font-size: 20px;opacity: 1;}
+    ::-webkit-input-placeholder {color: rgb(107,205,161);font-size: 20px;}
+    *:focus {outline: none;}
+
+
+    @keyframes message_animation {
+        0%{
+            transform:translatey(0px);
+            z-index: 300;
+            transition: 1s ease-in-out;
+        }
+        50%{
+            transform:translatey(-340px);
+            z-index: 300;
+            transition: 1s ease-in-out;
+        }
+        51%{
+            transform:translatey(-340px);
+            z-index: 350;
+            transition: 1s ease-in-out;
+        }
+        100%{
+            transform:translatey(0px);
+            z-index: 350;
+            transition: 1s ease-in-out;
+        }
+    }
+}
+
+/*
+  Mobile
+*/
+@media (max-width: 649px) {
+
+    section.kontakt{
+        padding: 80px 30px;
+    }
+
+    .frame{
+        width: 600px;
+        height: 350px;
+        margin: 210px auto 0;
+        position: relative;
+        background: whitesmoke;
+        border-radius:0 0 40px 40px;
+    }
+    #button_open_envelope{
+        width: 220px;
+        height: 50px;
+        position: absolute;
+        z-index: 311;
+        top: 260px;
+        left: 200px;
+        border-radius: 7px;
+        color: #fff;
+        font-size: 26px;
+        padding:5px 2px 0px 7px;
+        border: 2px solid #fff;
+        transition:.3s;
+    }
+    #button_open_envelope:hover{
+        background: #FFf;
+        color: rgb(107,205,161);
+        transform:scale(1.1);
+        transition:background .25s, transform .5s,ease-in;
+        cursor: pointer;
+    }
+
+    #button-send{
+        width: 570px;
+        height: 50px;
+        position: absolute;
+        z-index: 311;
+        top: 250px;
+        left: 0px;
+        border-radius: 0px 0px 10px 10px;
+        color: whitesmoke;
+        font-size: 26px;
+        padding:5px 2px 0px 7px;
+        border: none;
+        transition:.3s;
+        background-color: rgb(107,205,161);
+    }
+
+    #button-send:hover{
+        background: #a8a8a8;
+        color: whitesmoke;
+        cursor: pointer;
+        font-size: 25px;
+        transition: all .2s ease-in-out;
+    }
+    .message{
+        position: relative;
+        border-radius: 10px 10px 10px 10px;
+        width: 570px;
+        min-height:300px;
+        height: auto;
+        background: #fff;
+        margin: 20px auto;
+        top: 30px;
+        box-shadow: 0 0 5px 2px #a8a8a8;
+        transition:2s ease-in-out;
+        transition-delay:1.5s;
+        z-index: 300;
+    }
+    .left,.right,.top{width: 0;	height: 0;position:absolute;top:0;z-index: 310;}
+    .left{
+        border-left: 300px solid #d7d7d7;
+        border-top: 160px solid transparent;
+        border-bottom: 160px solid transparent;
+    }
+    .right{
+        border-right: 300px solid #d7d7d7;
+        border-top: 160px solid transparent;
+        border-bottom: 160px solid transparent;;
+        left:300px;
+    }
+    .top{
+        border-right: 300px solid transparent;
+        border-top: 200px solid #f1f1f1;
+        border-left: 300px solid transparent;
+        transition:transform 1s,border 1s, ease-in-out;
+        transform-origin:top;
+        transform:rotateX(0deg);
+        z-index: 500;
+    }
+    .bottom{
+        width: 600px;
+        height: 190px;
+        position: absolute;
+        background: #bdbdbd;
+        top: 160px;
+        border-radius:0 0 30px 30px;
+        z-index: 310;
+    }
+
+    .open{
+        transform-origin:top;
+        transform:rotateX(180deg);
+        transition:transform .7s,border .7s,z-index .7s ease-in-out;
+        border-top: 200px solid #a8a8a8;
+        z-index: 200;
+    }
+    .pull{
+        -webkit-animation:message_animation 2s 1 ease-in-out;
+        animation:message_animation 2s 1 ease-in-out;
+        -webkit-animation-delay:.9s;
+        animation-delay:.45s;
+        transition:1.5s;
+        transition-delay:1s;
+        z-index: 350;
+    }
+    #name,#email,#phone,#messarea,#send{
+        margin: 0;
+        padding: 0 0 0 8px;
+        width: 570px;
+        height:40px;
+        float: left;
+        display: block;
+        font-size: 16px;
+        color: rgb(107,205,161);
+        border:none;
+        border-bottom:1px solid #bdbdbd;
+        letter-spacing: normal;
+        font-family: "Open Sans";
+    }
+
+    #name {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #messarea{
+        height: 117px;
+        width: 560px;
+        overflow: auto;
+        border:none;
+        padding: 10px;
+    }
+    #send{
+        width:   580px;
+        padding: 0;
+        border:  none;
+        cursor:  pointer;
+        background: rgb(107,205,161);
+        color: #fff;
+        transition:.35s;
+        letter-spacing: 1px;
+    }
+
+    ::-moz-placeholder{color: rgb(107,205,161);font-size: 20px;opacity: 1;}
+    ::-webkit-input-placeholder {color: rgb(107,205,161);font-size: 20px;}
+    *:focus {outline: none;}
+
+
+    @keyframes message_animation {
+        0%{
+            transform:translatey(0px);
+            z-index: 300;
+            transition: 1s ease-in-out;
+        }
+        50%{
+            transform:translatey(-340px);
+            z-index: 300;
+            transition: 1s ease-in-out;
+        }
+        51%{
+            transform:translatey(-340px);
+            z-index: 350;
+            transition: 1s ease-in-out;
+        }
+        100%{
+            transform:translatey(0px);
+            z-index: 350;
+            transition: 1s ease-in-out;
+        }
+    }
+}
+
+/* Footer */
+footer{
+    padding: 70px;
+    color: #333;
     background-color: rgb(107,205,161);
+    width: 100%;
+    text-align: left;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
 }
 
-#button-send:hover{
-    background: #a8a8a8;
-    color: whitesmoke;
-    cursor: pointer;
-    font-size: 25px;
-    transition: all .2s ease-in-out;
-}
-.message{
-    position: relative;
-    border-radius: 10px 10px 10px 10px;
-    width: 570px;
-    min-height:300px;
-    height: auto;
-    background: #fff;
-    margin: 20px auto;
-    top: 30px;
-    box-shadow: 0 0 5px 2px #a8a8a8;
-    transition:2s ease-in-out;
-    transition-delay:1.5s;
-    z-index: 300;
-}
-.left,.right,.top{width: 0;	height: 0;position:absolute;top:0;z-index: 310;}
-.left{
-    border-left: 300px solid #d7d7d7;
-    border-top: 160px solid transparent;
-    border-bottom: 160px solid transparent;
-}
-.right{
-    border-right: 300px solid #d7d7d7;
-    border-top: 160px solid transparent;
-    border-bottom: 160px solid transparent;;
-    left:300px;
-}
-.top{
-    border-right: 300px solid transparent;
-    border-top: 200px solid #f1f1f1;
-    border-left: 300px solid transparent;
-    transition:transform 1s,border 1s, ease-in-out;
-    transform-origin:top;
-    transform:rotateX(0deg);
-    z-index: 500;
-}
-.bottom{
-    width: 600px;
-    height: 190px;
-    position: absolute;
-    background: #bdbdbd;
-    top: 160px;
-    border-radius:0 0 30px 30px;
-    z-index: 310;
+.footer-items div{
+    margin: 400px;
 }
 
-.open{
-    transform-origin:top;
-    transform:rotateX(180deg);
-    transition:transform .7s,border .7s,z-index .7s ease-in-out;
-    border-top: 200px solid #a8a8a8;
-    z-index: 200;
-}
-.pull{
-    -webkit-animation:message_animation 2s 1 ease-in-out;
-    animation:message_animation 2s 1 ease-in-out;
-    -webkit-animation-delay:.9s;
-    animation-delay:.45s;
-    transition:1.5s;
-    transition-delay:1s;
-    z-index: 350;
-}
-#name,#email,#phone,#messarea,#send{
-    margin: 0;
-    padding: 0 0 0 8px;
-    width: 570px;
-    height:40px;
-    float: left;
-    display: block;
-    font-size: 16px;
-    color: rgb(107,205,161);
-    border:none;
-    border-bottom:1px solid #bdbdbd;
-    letter-spacing: normal;
-    font-family: "Open Sans";
-}
 
-#name {
-border-radius: 10px 10px 0 0;
-}
-
-#messarea{
-    height: 117px;
-    width: 560px;
-    overflow: auto;
-    border:none;
-    padding: 10px;
-}
-#send{
-    width:   580px;
-    padding: 0;
-    border:  none;
-    cursor:  pointer;
-    background: rgb(107,205,161);
-    color: #fff;
-    transition:.35s;
-    letter-spacing: 1px;
-}
-
-::-moz-placeholder{color: rgb(107,205,161);font-size: 20px;opacity: 1;}
-::-webkit-input-placeholder {color: rgb(107,205,161);font-size: 20px;}
-*:focus {outline: none;}
-
-
-@keyframes message_animation {
-    0%{
-        transform:translatey(0px);
-        z-index: 300;
-        transition: 1s ease-in-out;
+/*
+  Laptops, Desktops
+*/
+@media (min-width: 750px) {
+    footer{
+        padding: 70px;
+        color: #333;
+        background-color: rgb(107,205,161);
+        width: 100%;
+        text-align: left;
+        flex-direction: row;
     }
-    50%{
-        transform:translatey(-340px);
-        z-index: 300;
-        transition: 1s ease-in-out;
+
+    a.logo_footer{
+        z-index: 100;
+        position: relative;
+        display: block;
+        width: 160px;
+        height: 66px;
+        background: url(../images/logo_remeda.png) no-repeat 0 0;
+        background-size: contain;
+        float: right;
+        margin-top: -20px;
+        margin-right: 80px;
     }
-    51%{
-        transform:translatey(-340px);
-        z-index: 350;
-        transition: 1s ease-in-out;
+}
+
+
+/*
+  Mobile
+*/
+@media (max-width: 749px) {
+    footer{
+        padding: 70px;
+        color: #333;
+        background-color: rgb(107,205,161);
+        width: 100%;
+        text-align: left;
+        flex-direction: column;
     }
-    100%{
-        transform:translatey(0px);
-        z-index: 350;
-        transition: 1s ease-in-out;
+
+    a.logo_footer{
+        z-index: 100;
+        position: relative;
+        display: block;
+        width: 160px;
+        height: 66px;
+        background: url(../images/logo_remeda.png) no-repeat 0 0;
+        background-size: contain;
+        float: left;
+        margin-top: 30px;
+        margin-right: 80px;
     }
 }
